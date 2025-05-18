@@ -10,11 +10,15 @@ function Header() {
         <div className="headercontainer">
             <div className="headernavlist">
                 <ul>
+                 
                     {/* <li><a href=""><img src="" alt="" /></a></li> */}
-                    <li><a href="">About</a></li>
-                    <li><a href="">Servicess</a></li>
-                    <li><a href="">Product</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="">Jackets & Coats</a></li>
+                    <li><a href="">Jeans</a></li>
+                    <li><a href="">Dresses</a></li>
+                    <li><a href="">Suits</a></li>
+                    <li><a href="">Tops</a></li>
+                    <li><a href="">Shirts</a></li>
+                    <li><a href="">Sweatshirts & Hoodies</a></li>
                   
                    <Link to={'/Checkout'}>   <li><a href="">{basket.length}</a></li></Link>
                 </ul>

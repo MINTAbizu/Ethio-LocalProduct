@@ -27,6 +27,86 @@ function Home() {
           </div>
         </div>
       </div>
+       <div className="container-fluid productsection">
+        <div className="row">
+          {/* <div className="col-md-3">
+            <Product id="1212" description="Description 1" image={image3} price={1231} rating={3}/>
+          </div> */}
+          <div className="col-md-4">
+            <Product id="1212" description="Description 2" image={image1} price={1231} rating={3}/>
+          </div>
+          <div className="col-md-4">
+            <Product id="1212" description="Description 3" image={homeimage} price={1231} rating={3}/>
+          </div>
+          <div className="col-md-4">
+            <Product id="1212" description="Description 4" image={image3} price={1231} rating={3}/>
+          </div>
+        </div>
+      </div>
+       <div className="container-fluid productsection">
+        <div className="row">
+          {/* <div className="col-md-3">
+            <Product id="1212" description="Description 1" image={image3} price={1231} rating={3}/>
+          </div> */}
+          <div className="col-md-4">
+            <Product id="1212" description="Description 2" image={image1} price={1231} rating={3}/>
+          </div>
+          <div className="col-md-4">
+            <Product id="1212" description="Description 3" image={homeimage} price={1231} rating={3}/>
+          </div>
+          <div className="col-md-4">
+            <Product id="1212" description="Description 4" image={image3} price={1231} rating={3}/>
+          </div>
+        </div>
+      </div>
+       <div className="container-fluid productsection">
+        <div className="row">
+          {/* <div className="col-md-3">
+            <Product id="1212" description="Description 1" image={image3} price={1231} rating={3}/>
+          </div> */}
+          <div className="col-md-4">
+            <Product id="1212" description="Description 2" image={image1} price={1231} rating={3}/>
+          </div>
+          <div className="col-md-4">
+            <Product id="1212" description="Description 3" image={homeimage} price={1231} rating={3}/>
+          </div>
+          <div className="col-md-4">
+            <Product id="1212" description="Description 4" image={image3} price={1231} rating={3}/>
+          </div>
+        </div>
+      </div>
+       <div className="container-fluid productsection">
+        <div className="row">
+          {/* <div className="col-md-3">
+            <Product id="1212" description="Description 1" image={image3} price={1231} rating={3}/>
+          </div> */}
+          <div className="col-md-4">
+            <Product id="1212" description="Description 2" image={image1} price={1231} rating={3}/>
+          </div>
+          <div className="col-md-4">
+            <Product id="1212" description="Description 3" image={homeimage} price={1231} rating={3}/>
+          </div>
+          <div className="col-md-4">
+            <Product id="1212" description="Description 4" image={image3} price={1231} rating={3}/>
+          </div>
+        </div>
+      </div>
+       <div className="container-fluid productsection">
+        <div className="row">
+          {/* <div className="col-md-3">
+            <Product id="1212" description="Description 1" image={image3} price={1231} rating={3}/>
+          </div> */}
+          <div className="col-md-4">
+            <Product id="1212" description="Description 2" image={image1} price={1231} rating={3}/>
+          </div>
+          <div className="col-md-4">
+            <Product id="1212" description="Description 3" image={homeimage} price={1231} rating={3}/>
+          </div>
+          <div className="col-md-4">
+            <Product id="1212" description="Description 4" image={image3} price={1231} rating={3}/>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
