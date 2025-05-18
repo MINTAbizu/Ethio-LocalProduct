@@ -1,38 +1,27 @@
-import React from 'react'
-import { useStateValue } from '../Staateprovider/Stateprovider'
-import CheckoutProduct from './CheckoutProduct'
-
+import React from 'react';
+import { useStateValue } from '../Staateprovider/Stateprovider';
+import CheckoutProduct from './CheckoutProduct';
 
 function Checkout() {
-    const [{basket},dispacth]=useStateValue()
-  return (
-    <div>
-        <div className="checkouttitile">
-            <h1>Your chekout Product</h1>
-
+    const [{ basket }] = useStateValue();
+    
+    return (
+        <div>
+            <div className="checkouttitle">
+                <h1>Your Checkout Products</h1>
+            </div>
+            {basket.map((item, i) => (
+                <CheckoutProduct
+                    key={i}
+                    id={item.id}
+                    price={item.price}
+                    description={item.description}
+                    image={item.image}
+                    rating={item.rating}
+                />
+            ))}
         </div>
-        {
-           basket.map((item,i)=>{
-             <CheckoutProduct
-             key={i}
-             id={item.id}
-             price={item.price}
-             descrption={item.descrption}
-             image={item.image}
-             rating={item.rating}
-
-
-             
-             
-             />
-           }) 
-        }
-
-        {/* <CheckoutProduct/> */}
-
-      
-    </div>
-  )
+    );
 }
 
-export default Checkout
+export default Checkout;

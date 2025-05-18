@@ -1,45 +1,38 @@
-import React from 'react'
-import '../product/product.css'
-function CheckoutProduct({price,descrption,rating,image}) {
-    const [{ basket },dispacth] = useStateValue();
-  const removebasket=()=>{
-    dispacth({
-      type:'removebasket',
-      id:id
-    })
+import React from 'react';
+import '../../component/Chenckout/checkoptproduct.css';
+import { useStateValue } from '../Staateprovider/Stateprovider';
 
-  }
-  return (
-    <div>
-         <div className='product' >
-      
-      <div className="descrption">
-        <p>{descrption}</p>
-      </div>
-      <div className="price">
-       ${ price}
-      </div>
-      <div className="rating">
-      {Array(rating)
-            .fill()
-            .map(()=>(
-              <p>⭐</p>
+function CheckoutProduct({ id, price, description, rating, image }) {
+    const [{ basket }, dispatch] = useStateValue();
 
-            ))
-            
-            }
-      </div>
-      <div className="productimage ">
-        <img  src={image} alt="" />
-      </div>
-      <div className="addtocartbtn">
-        <button onClick={addtobasket}>Add-to-cart</button>
-      </div>
-    </div>
-      
-    </div>
-  )
+    const removeBasket = () => {
+        dispatch({
+            type: 'removebasket',
+            id: id,
+        });
+    };
+
+    return (
+        <div className='product'>
+            <div className="description">
+                <p>{description}</p>
+            </div>
+            <div className="price">
+                ${price}
+            </div>
+            <div className="rating">
+                {Array(rating).fill().map((_, i) => (
+                    <p key={i}>⭐</p>
+                ))}
+            </div>
+            <div className="productimage">
+                <img src={image} alt="" />
+            </div>
+            <div className="removebtn">
+                <button onClick={removeBasket}>Remove from Basket</button>
+            </div>
+        </div>
+    );
 }
 
-export default CheckoutProduct
-
+export default CheckoutProduct;
