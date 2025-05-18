@@ -19,23 +19,17 @@ function Product({ image, price, description, rating, watch, id }) {
     };
 
     return (
-        <div className='product container'>
-            <div className="description">
-                <p>{description}</p>
-            </div>
-            <div className="price">
-                ${price}
-            </div>
-            <div className="rating">
-                {Array(rating).fill().map((_, i) => (
-                    <p key={i}>⭐</p>
-                ))}
-            </div>
-            <div className="productimage">
-                <img className={`${watch}`} src={image} alt="" />
-            </div>
-            <div className="addtocartbtn">
-                <button onClick={addToBasket}>Add to Cart</button>
+        <div className='product card'>
+            <img className={`card-img-top ${watch}`} src={image} alt="" />
+            <div className="card-body">
+                <h5 className="card-title">{description}</h5>
+                <p className="card-text">${price}</p>
+                <div className="rating">
+                    {Array(rating).fill().map((_, i) => (
+                        <span key={i}>⭐</span>
+                    ))}
+                </div>
+                <button className="btn btn-primary" onClick={addToBasket}>Add to Cart</button>
             </div>
         </div>
     );

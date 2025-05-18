@@ -6,9 +6,9 @@ function Checkout() {
     const [{ basket }] = useStateValue();
     
     return (
-        <div>
+        <div className='container'>
             <div className="checkouttitle">
-                <h1>Your Checkout Products</h1>
+                <h1 className='text-center'>Your Checkout Products</h1>
             </div>
             {basket.map((item, i) => (
                 <CheckoutProduct
