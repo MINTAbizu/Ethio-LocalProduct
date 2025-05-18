@@ -1,0 +1,20 @@
+
+
+.headernavlist ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 12px;
+    text-align: center;
+    margin-right: 30px;
+}
+.headernavlist ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.headernavlist ul li a{
+    text-decoration: none;
+    list-style: none;
+
+    font-size: 19px;
+}
