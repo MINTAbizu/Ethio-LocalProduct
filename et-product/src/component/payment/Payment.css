@@ -1,0 +1,116 @@
+.payment {
+    background-color: white;
+    padding: 20px;
+}
+
+.payment__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.payment__container > h1 {
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    background-color: rgb(234, 237, 237);
+    border-bottom: 1px solid lightgray;
+}
+
+.payment__section {
+    display: flex;
+    padding: 20px;
+    margin: 0 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.payment__title {
+    flex: 0.2;
+}
+
+.payment__address,
+.payment__items,
+.payment__details {
+    flex: 0.8;
+}
+
+.payment__items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.payment__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.payment__item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.payment__itemDetails {
+    flex: 1;
+}
+
+.payment__itemDetails p:first-child {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.payment__priceContainer {
+    margin-top: 20px;
+}
+
+.payment__button {
+    background: #f0c14b;
+    border: 1px solid #a88734;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.payment__button:hover {
+    background: #ddb347;
+}
+
+.payment__button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+.payment__error {
+    color: #dc3545;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .payment__section {
+        flex-direction: column;
+        padding: 10px;
+        margin: 0 10px;
+    }
+
+    .payment__title {
+        margin-bottom: 10px;
+    }
+
+    .payment__item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .payment__item img {
+        width: 150px;
+        height: 150px;
+    }
+} 

@@ -28,6 +28,7 @@ function Product({ image, price, description, rating, watch, id }) {
                     {Array(rating).fill().map((_, i) => (
                         <span key={i}>⭐</span>
                     ))}
+                
                 </div>
                 <button className="btn btn-primary" onClick={addToBasket}>Add to Cart</button>
             </div>

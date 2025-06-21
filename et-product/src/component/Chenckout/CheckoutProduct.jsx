@@ -13,23 +13,36 @@ function CheckoutProduct({ id, price, description, rating, image }) {
     };
 
     return (
-        <div className='product'>
-            <div className="description">
-                <p>{description}</p>
-            </div>
-            <div className="price">
-                ${price}
-            </div>
-            <div className="rating">
-                {Array(rating).fill().map((_, i) => (
-                    <p key={i}>⭐</p>
-                ))}
-            </div>
-            <div className="productimage">
-                <img src={image} alt="" />
-            </div>
-            <div className="removebtn">
-                <button onClick={removeBasket}>Remove from Basket</button>
+        <div className='checkout-product'>
+            <div className="row align-items-center">
+                <div className="col-12 col-md-3">
+                    <div className="product-image">
+                        <img src={image} alt={description} className="img-fluid" />
+                    </div>
+                </div>
+                <div className="col-12 col-md-6">
+                    <div className="product-details">
+                        <h3 className="product-title">{description}</h3>
+                        <div className="product-rating">
+                            {Array(rating).fill().map((_, i) => (
+                                <span key={i} className="star">⭐</span>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+                <div className="col-12 col-md-3">
+                    <div className="product-actions">
+                        <div className="product-price">
+                            ${price}
+                        </div>
+                        <button 
+                            className="btn btn-danger remove-button"
+                            onClick={removeBasket}
+                        >
+                            Remove
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     );
