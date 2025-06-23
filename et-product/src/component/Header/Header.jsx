@@ -36,7 +36,7 @@ function Header() {
               <li><Link to={'/Tops'}>Tops</Link></li>
               <li><Link to={'/shirts'}>Shirts</Link></li>
               <li><Link to={'/sweatshirts'}>Sweatshirts & Hoodies</Link></li>
-              <li><Link to={'/signup'}>  Signup</Link></li>
+              <li><Link to={'/Login'}>  Signup</Link></li>
             </ul>
           </nav>
         </div>

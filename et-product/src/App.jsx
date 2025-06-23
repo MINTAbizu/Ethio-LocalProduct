@@ -13,9 +13,10 @@ import Jacket from "./component/Jaketandcoats/Jacket";
 import Chatbot from './component/Chatbot/Chatbot';
 import Footer from "./component/Footer/Footer";
 // import Advertisement from "./component/Advertisement/Advertisement";
-import Payment from "./component/Payment/Payment";
+import Payment from "./component/payment/Payment.jsx";
 import PaymentSuccess from "./component/payment/PaymentSuccess";
 import PaymentFailure from "./component/payment/PaymentFailure";
+import Login from "./component/Login/Login";
 
 function App() {
   
@@ -37,6 +38,7 @@ function App() {
     <Route path="/payment" element={<Payment/>}/>
     <Route path="/payment-success" element={<PaymentSuccess/>}/>
     <Route path="/payment-failure" element={<PaymentFailure/>}/>
+    <Route path="/Login" element={<Login/>}/>
    </Routes>
    </div>
     </Router>

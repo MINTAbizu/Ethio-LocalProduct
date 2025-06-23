@@ -4,6 +4,7 @@ import '../home/home.css';
 import Product from '../../component/product/Product';
 import image1 from '../../component/image/image/beauty.jpg';
 import image3 from '../../component/image/prodctimg.jpg';
+import image4 from '../../assets/image.png'
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 // import Advertisement from '../Advertisement/Advertisement';
@@ -29,7 +30,7 @@ function Home() {
          
           </div>
           <div>
-            <img src={image1} alt="Home Slide 2" className="img-fluid" />
+            <img src={image4} alt="Home Slide 2" className="img-fluid" />
             <p className="legend">Discover Beauty Products</p>
           </div>
           <div>
@@ -42,7 +43,7 @@ function Home() {
       <div className="container-fluid productsection">
         <div className="row">
           <div className="col-md-3">
-            <Product id="1" description="Description 2" image={image1} price={1231} rating={3}/>
+            <Product id="1" description="Description 2" image={image4} price={1231} rating={3}/>
           </div>
           <div className="col-md-3">
             <Product id="2" description="Description 3" image={homeimage} price={1231} rating={3}/>

@@ -85,7 +85,7 @@ function DressCard({ id, image, price, rating, description }) {
             <img className='card-img-top' src={image} alt={description} />
             <div className="card-body">
                 <h5 className="card-title">{description}</h5>
-                <p className="card-text">Birr {price}</p>
+                <p className="card-text">Birr {price}:00 ብር ብቻ</p>
                 <div className="rating">
                     {Array(rating).fill().map((_, i) => (
                         <span key={i}>⭐</span>
