@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStateValue } from '../Staateprovider/Stateprovider';
 import '../product/product.css';
-import image1 from '../image/image/beauty.jpg';
+import image1 from '../image/image/Beauty.jpg';
 import image3 from '../image/prodctimg.jpg';
 import homeimage from '../image/home.jpg';
 import '../Dress/dress.css'
