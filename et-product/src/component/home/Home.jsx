@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import homeimage from '../image/home.jpg';
 import '../home/home.css';
 import Product from '../../component/product/Product';
-import image1 from '../../component/image/image/beauty.jpg';
+import image1 from '../../component/image/image/Beauty.jpg';
 import image3 from '../../component/image/prodctimg.jpg';
 import image4 from '../../assets/image.png'
 import { Carousel } from 'react-responsive-carousel';
