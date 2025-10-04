@@ -33,7 +33,7 @@ function CheckoutProduct({ id, price, description, rating, image }) {
                 <div className="col-12 col-md-3">
                     <div className="product-actions">
                         <div className="product-price">
-                            ${price}
+                            ብር {price}.00 ብቻ
                         </div>
                         <button 
                             className="btn btn-danger remove-button"

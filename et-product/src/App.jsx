@@ -12,7 +12,7 @@ import Tops from "./component/Tops/Tops";
 import Jacket from "./component/Jaketandcoats/Jacket";
 import Chatbot from './component/Chatbot/Chatbot';
 import Footer from "./component/Footer/Footer";
-// import Advertisement from "./component/Advertisement/Advertisement";
+import Advertisement from "./component/Advertisement/Advertisement";
 import Payment from "./component/payment/Payment.jsx";
 import PaymentSuccess from "./component/payment/PaymentSuccess";
 import PaymentFailure from "./component/payment/PaymentFailure";

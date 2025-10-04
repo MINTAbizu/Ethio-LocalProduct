@@ -7,7 +7,7 @@ import image3 from '../../component/image/prodctimg.jpg';
 import image4 from '../../assets/image.png'
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-// import Advertisement from '../Advertisement/Advertisement';
+import Advertisement from '../Advertisement/Advertisement';
 
 function Home() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -19,7 +19,7 @@ function Home() {
   return (
     <div>
       {/* Advertisement section above carousel */}
-      {/* <Advertisement /> */}
+     
       {/* Main Content */}
       <h6>Your trusted marketplace for local Ethiopian products. Shop local, support local!</h6>
       <div className='homeimage'>
@@ -222,6 +222,7 @@ function Home() {
           </div>
         </div>
       </div>
+       <Advertisement />
     </div>
   );
 }
